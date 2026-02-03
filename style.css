@@ -145,40 +145,6 @@ table caption {
     background-color: #45a049;
 }
 
-/* Trang trí thanh menu lớn */
-.navbar {
-    background-color: #333; /* Màu nền đen xám */
-    overflow: hidden;
-}
-
-/* Xóa dấu chấm đầu dòng của danh sách */
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Canh giữa menu (hoặc xóa dòng này nếu muốn canh trái) */
-}
-
-/* Xếp các mục nằm ngang */
-.navbar li {
-    display: inline-block;
-}
-
-/* Trang trí cho từng đường link */
-.navbar li a {
-    display: block;
-    color: white; /* Chữ màu trắng */
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none; /* Bỏ gạch chân */
-}
-
-/* Hiệu ứng khi rê chuột vào */
-.navbar li a:hover {
-    background-color: #111; /* Đổi màu nền khi trỏ chuột */
-    color: #04AA6D; /* Đổi màu chữ (xanh lá) */
-}
-
 
 
 
