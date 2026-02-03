@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Bài tập thiết kế web</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container"> 
+
+    <h1>BÁO CÁO HTML</h1>
+
+    <h3>1. Định dạng (tô đậm, in nghiêng, gạch chân)</h3>
+        <p>
+            Họ và tên: <b>Đỗ Thành Duy</b> <br>
+            Lớp: <i>DA24TTB</i> <br>
+            Môn học: <u>Thiết kế Web</u>
+        </p>
+
+    <h3>2. Chèn ảnh</h3>
+        <caption>Ảnh ngẫu nhiên từ internet + trang trí border: <br> </br></caption>
+        <img src="https://picsum.photos/300/200?random=1" 
+             alt="ảnh ngẫu nhiên từ web" 
+             class="anh-trang-tri">
+                    
+	<h3>3. Bảng (có áp dụng border và tô màu nền) </h3>
+    
+		<table border="5" 
+				cellpadding="10" 
+				cellspacing="0" 
+				width="80%"
+				>
+				
+			<caption> <b>Bảng điểm Toán Văn</b> <br> </br> </caption>
+			
+			<tr> <th rowspan = 2 >STT</th> <th rowspan = 2>Họ Tên</th>  <th colspan = 2>Điểm</th> </tr>
+			<tr> <th>Toán</th> <th>Văn</th>  </tr>
+			<tr> <td>1</td>    <td>Duy </td> <td>10</td> <td>9</td>   </tr>
+			<tr> <td>2</td>    <td>Hand </td>   <td>7</td>  <td>3</td>   </tr>
+			<tr> <td>3</td>    <td>Some</td>  <td>7</td>  <td>5</td>   </tr>
+			
+		</table>
+        
+    <h3>4. Link</h3>
+        <a href="https://www.youtube.com/watch?v=wKIt5vBSW-4&list=RDwKIt5vBSW-4&start_radio=1" 
+           target="_blank" 
+           class="link-youtube">
+           Nguyễn Hùng - Hẹn Lần Sau (Click vào sẽ mở trang Youtube)
+        </a>
+
+    <h3>5. Button</h3>
+        <button onclick="window.open('https://www.youtube.com/watch?v=wKIt5vBSW-4&list=RDwKIt5vBSW-4&start_radio=1')"
+                class="nut-bam-dep"> 
+           Nguyễn Hùng - Hẹn Lần Sau
+        </button>
+
+    <h3>6. List</h3>
+        <caption><i>Danh sách không thứ tự:</i></caption>
+        <ul type="square">
+            <li>Cam</li>
+            <li>Táo</li>
+            <li>Chuối</li>
+        </ul>
+        <caption><i>Danh sách có thứ tự:</i></caption>
+        <ol type="1">
+            <li>Sơ chế</li>
+            <li>Nấu ăn</li>
+        </ol>
+        <caption><i>Danh sách mô tả:</i></caption>          
+        <dl>
+            <dt>HTML:</dt>
+            <dd>Ngôn ngữ siêu văn bản.</dd>
+            <dd>Ngôn ngữ rắc rối, rườm rà và thú vị</dd>
+        </dl>
+        
+    <h3>7. Block + Inline</h3>  
+        <div class="khoi-van-ban">
+             <p>
+                Giữa lòng <strong>Phường 7, Trà Vinh</strong>, nơi hương vị 
+                <span class="text-cam">bún suông</span> 
+                nồng nàn quyện cùng làn gió mát từ những 
+                <em class="text-xanh-la">hàng cây cổ thụ xanh mát</em>, 
+                nhịp sống diễn ra thật bình yên. 
+            </p>
+
+            <p>
+                Bạn có thể nghe tiếng chuông chùa ngân vang xa xăm, trong khi những 
+                <span class="text-nen-hong">tà áo dài thướt tha</span> 
+                len lỏi qua các con phố nhỏ, tạo nên bức tranh văn hóa 
+                <mark>đậm đà bản sắc Khmer độc đáo</mark>.
+            </p>
+        </div>
+
+    <h3>8. Class và ID</h3>     
+        <p id="dong-chu-doc-dao" class="van-ban">
+            Đây là ID có độ ưu tiên lớn nhất
+        </p>
+        <p class="van-ban">
+            Đây là một dòng văn bản bình thường dùng CSS và Class.
+        </p>
+
+    <h3>9. Form</h3>
+        <div class="khung-form">
+            <form>
+                <label for="fname">Họ và tên:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Nhập tên của bạn..." class="input-dai"><br>
+
+                <label class="label-cau-hoi">Bạn có muốn học cô Đan Thanh tới năm cuối không?</label><br>
+                
+                <input type="radio" id="co" name="like_teacher" value="yes">
+                <label for="co" style="margin-right: 15px;">Có</label>
+                
+                <input type="radio" id="khong" name="like_teacher" value="no">
+                <label for="khong">Không</label><br><br>
+
+                <label for="khoa">Bạn là sinh viên khoa nào?</label><br>
+                <select id="khoa" name="khoa" style="padding: 5px;">
+                    <option value="cntt">Công nghệ thông tin</option>
+                    <option value="kinhte">Kinh tế - Luật</option>
+                    <option value="ngonngu">Ngoại ngữ</option>
+                </select><br><br>
+
+                <input type="submit" value="Gửi Câu Trả Lời" class="btn-gui">
+            </form>
+        </div>  
+        
+    <h3>10. Video</h3>    
+        <video controls width="100%">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        </video>
+
+    </div>  
+</body>
+</html>
